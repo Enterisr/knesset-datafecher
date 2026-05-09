@@ -4,4 +4,4 @@ committee_data_*
 temp*
 utterances/
 *.sqlite
-dover_protocols
+*.venv
