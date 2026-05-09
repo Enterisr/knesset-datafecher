@@ -1,0 +1,7 @@
+logs/*
+committee_data
+committee_data_*
+temp*
+utterances/
+*.sqlite
+dover_protocols

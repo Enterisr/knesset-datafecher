@@ -1,0 +1,786 @@
+{
+  "30749": {
+    "Id": 30749,
+    "FirstName": "משה",
+    "Email": "mabutbul@knesset.gov.il",
+    "LastName": "אבוטבול",
+    "FactionName": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל",
+    "FactionID": 1095
+  },
+  "30601": {
+    "Id": 30601,
+    "FirstName": "ינון",
+    "Email": "yazulai@knesset.gov.il",
+    "LastName": "אזולאי",
+    "FactionName": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל",
+    "FactionID": 1095
+  },
+  "30660": {
+    "Id": 30660,
+    "FirstName": "משה",
+    "Email": "marbel@knesset.gov.il",
+    "LastName": "ארבל",
+    "FactionName": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל",
+    "FactionID": 1095
+  },
+  "30765": {
+    "Id": 30765,
+    "FirstName": "אוריאל",
+    "Email": "urielb@knesset.gov.il",
+    "LastName": "בוסו",
+    "FactionName": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל",
+    "FactionID": 1095
+  },
+  "30804": {
+    "Id": 30804,
+    "FirstName": "חיים",
+    "Email": "chbiton@knesset.gov.il",
+    "LastName": "ביטון",
+    "FactionName": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל",
+    "FactionID": 1095
+  },
+  "28513": {
+    "Id": 28513,
+    "FirstName": "יואב",
+    "Email": "ybentzur@knesset.gov.il",
+    "LastName": "בן צור",
+    "FactionName": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל",
+    "FactionID": 1095
+  },
+  "2291": {
+    "Id": 2291,
+    "FirstName": "אריה מכלוף",
+    "Email": "aderey@knesset.gov.il",
+    "LastName": "דרעי",
+    "FactionName": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל",
+    "FactionID": 1095
+  },
+  "30770": {
+    "Id": 30770,
+    "FirstName": "יוסף",
+    "Email": "jtaieb@knesset.gov.il",
+    "LastName": "טייב",
+    "FactionName": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל",
+    "FactionID": 1095
+  },
+  "30470": {
+    "Id": 30470,
+    "FirstName": "מיכאל",
+    "Email": "malkielim@knesset.gov.il",
+    "LastName": "מלכיאלי",
+    "FactionName": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל",
+    "FactionID": 1095
+  },
+  "1056": {
+    "Id": 1056,
+    "FirstName": "יעקב",
+    "Email": "ymargi@knesset.gov.il",
+    "LastName": "מרגי",
+    "FactionName": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל",
+    "FactionID": 1095
+  },
+  "532": {
+    "Id": 532,
+    "FirstName": "יולי יואל",
+    "Email": "yedelstein@knesset.gov.il",
+    "LastName": "אדלשטיין",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "30300": {
+    "Id": 30300,
+    "FirstName": "אמיר",
+    "Email": "amiro@knesset.gov.il",
+    "LastName": "אוחנה",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "23564": {
+    "Id": 23564,
+    "FirstName": "דוד",
+    "Email": "davidam@knesset.gov.il",
+    "LastName": "אמסלם",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "12937": {
+    "Id": 12937,
+    "FirstName": "אופיר",
+    "Email": null,
+    "LastName": "אקוניס",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "23558": {
+    "Id": 23558,
+    "FirstName": "דוד",
+    "Email": "dbitan@knesset.gov.il",
+    "LastName": "ביטן",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "30700": {
+    "Id": 30700,
+    "FirstName": "ניר",
+    "Email": "nbarkat@knesset.gov.il",
+    "LastName": "ברקת",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "30077": {
+    "Id": 30077,
+    "FirstName": "יואב",
+    "Email": null,
+    "LastName": "גלנט",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "1025": {
+    "Id": 1025,
+    "FirstName": "גילה",
+    "Email": "ggamliel@knesset.gov.il",
+    "LastName": "גמליאל",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "4395": {
+    "Id": 4395,
+    "FirstName": "אבי",
+    "Email": "davraham@knesset.gov.il",
+    "LastName": "דיכטר",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "30809": {
+    "Id": 30809,
+    "FirstName": "גלית",
+    "Email": "gdistal@knesset.gov.il",
+    "LastName": "דיסטל אטבריאן",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "30058": {
+    "Id": 30058,
+    "FirstName": "מכלוף מיקי",
+    "Email": "mzohar@knesset.gov.il",
+    "LastName": "זוהר",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "30083": {
+    "Id": 30083,
+    "FirstName": "אלי",
+    "Email": "elic@knesset.gov.il",
+    "LastName": "כהן",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "30701": {
+    "Id": 30701,
+    "FirstName": "אופיר",
+    "Email": "okatz@knesset.gov.il",
+    "LastName": "כץ",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "556": {
+    "Id": 556,
+    "FirstName": "חיים",
+    "Email": "hkatz@knesset.gov.il",
+    "LastName": "כץ",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "468": {
+    "Id": 468,
+    "FirstName": "ישראל",
+    "Email": "yiskatz@knesset.gov.il",
+    "LastName": "כץ",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "12951": {
+    "Id": 12951,
+    "FirstName": "יריב",
+    "Email": "ylevin@knesset.gov.il",
+    "LastName": "לוין",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "965": {
+    "Id": 965,
+    "FirstName": "בנימין",
+    "Email": "bnetanyahu@knesset.gov.il",
+    "LastName": "נתניהו",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "30057": {
+    "Id": 30057,
+    "FirstName": "יואב",
+    "Email": "yoavk@knesset.gov.il",
+    "LastName": "קיש",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "30704": {
+    "Id": 30704,
+    "FirstName": "שלמה",
+    "Email": "shlomok@knesset.gov.il",
+    "LastName": "קרעי",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "12959": {
+    "Id": 12959,
+    "FirstName": "מירי מרים",
+    "Email": "mregev@knesset.gov.il",
+    "LastName": "רגב",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "30811": {
+    "Id": 30811,
+    "FirstName": "איתמר",
+    "Email": "ibengvir@knesset.gov.il",
+    "LastName": "בן גביר",
+    "FactionName": "הציונות הדתית",
+    "FactionID": 1097
+  },
+  "30810": {
+    "Id": 30810,
+    "FirstName": "מיכל מרים",
+    "Email": "michalwoldiger@knesset.gov.il",
+    "LastName": "וולדיגר",
+    "FactionName": "הציונות הדתית",
+    "FactionID": 1097
+  },
+  "30814": {
+    "Id": 30814,
+    "FirstName": "אבי",
+    "Email": "amaaoz@knesset.gov.il",
+    "LastName": "מעוז",
+    "FactionName": "הציונות הדתית",
+    "FactionID": 1097
+  },
+  "23551": {
+    "Id": 23551,
+    "FirstName": "אורית מלכה",
+    "Email": "ostruk@knesset.gov.il",
+    "LastName": "סטרוק",
+    "FactionName": "הציונות הדתית",
+    "FactionID": 1097
+  },
+  "30055": {
+    "Id": 30055,
+    "FirstName": "בצלאל",
+    "Email": "bezalels@knesset.gov.il",
+    "LastName": "סמוטריץ'",
+    "FactionName": "הציונות הדתית",
+    "FactionID": 1097
+  },
+  "30812": {
+    "Id": 30812,
+    "FirstName": "שמחה",
+    "Email": "srothman@knesset.gov.il",
+    "LastName": "רוטמן",
+    "FactionName": "הציונות הדתית",
+    "FactionID": 1097
+  },
+  "30662": {
+    "Id": 30662,
+    "FirstName": "מתן",
+    "Email": null,
+    "LastName": "כהנא",
+    "FactionName": "המחנה הממלכתי",
+    "FactionID": 1098
+  },
+  "30758": {
+    "Id": 30758,
+    "FirstName": "אימאן",
+    "Email": "ayasin@knesset.gov.il",
+    "LastName": "ח'טיב יאסין",
+    "FactionName": "רע\"ם",
+    "FactionID": 1099
+  },
+  "30752": {
+    "Id": 30752,
+    "FirstName": "ווליד",
+    "Email": "hak_taha@knesset.gov.il",
+    "LastName": "טאהא",
+    "FactionName": "רע\"ם",
+    "FactionID": 1099
+  },
+  "30713": {
+    "Id": 30713,
+    "FirstName": "מנסור",
+    "Email": "mabas@knesset.gov.il",
+    "LastName": "עבאס",
+    "FactionName": "רע\"ם",
+    "FactionID": 1099
+  },
+  "30106": {
+    "Id": 30106,
+    "FirstName": "נעמה",
+    "Email": "naamalazimi@knesset.gov.il",
+    "LastName": "לזימי",
+    "FactionName": "העבודה",
+    "FactionID": 1100
+  },
+  "23565": {
+    "Id": 23565,
+    "FirstName": "מרב",
+    "Email": "michaelim@knesset.gov.il",
+    "LastName": "מיכאלי",
+    "FactionName": "העבודה",
+    "FactionID": 1100
+  },
+  "30807": {
+    "Id": 30807,
+    "FirstName": "גלעד",
+    "Email": "gkariv@knesset.gov.il",
+    "LastName": "קריב",
+    "FactionName": "העבודה",
+    "FactionID": 1100
+  },
+  "30808": {
+    "Id": 30808,
+    "FirstName": "אפרת",
+    "Email": "eraiten@knesset.gov.il",
+    "LastName": "רייטן מרום",
+    "FactionName": "העבודה",
+    "FactionID": 1100
+  },
+  "1057": {
+    "Id": 1057,
+    "FirstName": "ישראל",
+    "Email": "ieichler@knesset.gov.il",
+    "LastName": "אייכלר",
+    "FactionName": "יהדות התורה",
+    "FactionID": 1101
+  },
+  "23641": {
+    "Id": 23641,
+    "FirstName": "יעקב",
+    "Email": "yakova@knesset.gov.il",
+    "LastName": "אשר",
+    "FactionName": "יהדות התורה",
+    "FactionID": 1101
+  },
+  "526": {
+    "Id": 526,
+    "FirstName": "משה",
+    "Email": "mgafni@knesset.gov.il",
+    "LastName": "גפני",
+    "FactionName": "יהדות התורה",
+    "FactionID": 1101
+  },
+  "30671": {
+    "Id": 30671,
+    "FirstName": "יעקב",
+    "Email": "ytesler@knesset.gov.il",
+    "LastName": "טסלר",
+    "FactionName": "יהדות התורה",
+    "FactionID": 1101
+  },
+  "11835": {
+    "Id": 11835,
+    "FirstName": "אורי",
+    "Email": "umaklev@knesset.gov.il",
+    "LastName": "מקלב",
+    "FactionName": "יהדות התורה",
+    "FactionID": 1101
+  },
+  "563": {
+    "Id": 563,
+    "FirstName": "מאיר",
+    "Email": "mporush@knesset.gov.il",
+    "LastName": "פרוש",
+    "FactionName": "יהדות התורה",
+    "FactionID": 1101
+  },
+  "23631": {
+    "Id": 23631,
+    "FirstName": "קארין",
+    "Email": "kelharrar@knesset.gov.il",
+    "LastName": "אלהרר",
+    "FactionName": "יש עתיד",
+    "FactionID": 1102
+  },
+  "30776": {
+    "Id": 30776,
+    "FirstName": "ולדימיר",
+    "Email": "vbeliak@knesset.gov.il",
+    "LastName": "בליאק",
+    "FactionName": "יש עתיד",
+    "FactionID": 1102
+  },
+  "30102": {
+    "Id": 30102,
+    "FirstName": "מירב",
+    "Email": "bmerav@knesset.gov.il",
+    "LastName": "בן ארי",
+    "FactionName": "יש עתיד",
+    "FactionID": 1102
+  },
+  "30691": {
+    "Id": 30691,
+    "FirstName": "רם",
+    "Email": "rbenbarak@knesset.gov.il",
+    "LastName": "בן ברק",
+    "FactionName": "יש עתיד",
+    "FactionID": 1102
+  },
+  "30681": {
+    "Id": 30681,
+    "FirstName": "אורנה",
+    "Email": null,
+    "LastName": "ברביבאי",
+    "FactionName": "יש עתיד",
+    "FactionID": 1102
+  },
+  "30820": {
+    "Id": 30820,
+    "FirstName": "סימון",
+    "Email": "hak_davidson@knesset.gov.il",
+    "LastName": "דוידסון",
+    "FactionName": "יש עתיד",
+    "FactionID": 1102
+  },
+  "23639": {
+    "Id": 23639,
+    "FirstName": "בועז",
+    "Email": "btoporovsky@knesset.gov.il",
+    "LastName": "טופורובסקי",
+    "FactionName": "יש עתיד",
+    "FactionID": 1102
+  },
+  "30777": {
+    "Id": 30777,
+    "FirstName": "משה",
+    "Email": "mturpaz@knesset.gov.il",
+    "LastName": "טור פז",
+    "FactionName": "יש עתיד",
+    "FactionID": 1102
+  },
+  "23597": {
+    "Id": 23597,
+    "FirstName": "מאיר",
+    "Email": "cohenmeir@knesset.gov.il",
+    "LastName": "כהן",
+    "FactionName": "יש עתיד",
+    "FactionID": 1102
+  },
+  "30686": {
+    "Id": 30686,
+    "FirstName": "מירב",
+    "Email": "mecohen@knesset.gov.il",
+    "LastName": "כהן",
+    "FactionName": "יש עתיד",
+    "FactionID": 1102
+  },
+  "30780": {
+    "Id": 30780,
+    "FirstName": "רון",
+    "Email": "rkatz@knesset.gov.il",
+    "LastName": "כץ",
+    "FactionName": "יש עתיד",
+    "FactionID": 1102
+  },
+  "30720": {
+    "Id": 30720,
+    "FirstName": "יוראי",
+    "Email": "ylahav@knesset.gov.il",
+    "LastName": "להב הרצנו",
+    "FactionName": "יש עתיד",
+    "FactionID": 1102
+  },
+  "23632": {
+    "Id": 23632,
+    "FirstName": "מיקי",
+    "Email": "mickeylevy@knesset.gov.il",
+    "LastName": "לוי",
+    "FactionName": "יש עתיד",
+    "FactionID": 1102
+  },
+  "23594": {
+    "Id": 23594,
+    "FirstName": "יאיר",
+    "Email": "ylapid@knesset.gov.il",
+    "LastName": "לפיד",
+    "FactionName": "יש עתיד",
+    "FactionID": 1102
+  },
+  "30782": {
+    "Id": 30782,
+    "FirstName": "טטיאנה",
+    "Email": "tmazarsky@knesset.gov.il",
+    "LastName": "מזרסקי",
+    "FactionName": "יש עתיד",
+    "FactionID": 1102
+  },
+  "30695": {
+    "Id": 30695,
+    "FirstName": "יואב",
+    "Email": "yoavse@knesset.gov.il",
+    "LastName": "סגלוביץ'",
+    "FactionName": "יש עתיד",
+    "FactionID": 1102
+  },
+  "30783": {
+    "Id": 30783,
+    "FirstName": "יסמין",
+    "Email": "yfridman@knesset.gov.il",
+    "LastName": "פרידמן",
+    "FactionName": "יש עתיד",
+    "FactionID": 1102
+  },
+  "30721": {
+    "Id": 30721,
+    "FirstName": "עידן",
+    "Email": null,
+    "LastName": "רול",
+    "FactionName": "יש עתיד",
+    "FactionID": 1102
+  },
+  "23601": {
+    "Id": 23601,
+    "FirstName": "יואל",
+    "Email": null,
+    "LastName": "רזבוזוב",
+    "FactionName": "יש עתיד",
+    "FactionID": 1102
+  },
+  "23591": {
+    "Id": 23591,
+    "FirstName": "אלעזר",
+    "Email": "sterne@knesset.gov.il",
+    "LastName": "שטרן",
+    "FactionName": "יש עתיד",
+    "FactionID": 1102
+  },
+  "30846": {
+    "Id": 30846,
+    "FirstName": "יצחק",
+    "Email": "ygoldknop@knesset.gov.il",
+    "LastName": "גולדקנופ",
+    "FactionName": "יהדות התורה",
+    "FactionID": 1101
+  },
+  "30657": {
+    "Id": 30657,
+    "FirstName": "בנימין",
+    "Email": "bgantz@knesset.gov.il",
+    "LastName": "גנץ",
+    "FactionName": "המחנה הממלכתי",
+    "FactionID": 1098
+  },
+  "4397": {
+    "Id": 4397,
+    "FirstName": "זאב",
+    "Email": "zelkin@knesset.gov.il",
+    "LastName": "אלקין",
+    "FactionName": "המחנה הממלכתי",
+    "FactionID": 1098
+  },
+  "1027": {
+    "Id": 1027,
+    "FirstName": "גדעון",
+    "Email": "gsaar@knesset.gov.il",
+    "LastName": "סער",
+    "FactionName": "המחנה הממלכתי",
+    "FactionID": 1098
+  },
+  "30836": {
+    "Id": 30836,
+    "FirstName": "גדי",
+    "Email": null,
+    "LastName": "איזנקוט",
+    "FactionName": "המחנה הממלכתי",
+    "FactionID": 1098
+  },
+  "23635": {
+    "Id": 23635,
+    "FirstName": "פנינה",
+    "Email": "ptamano@knesset.gov.il",
+    "LastName": "תמנו",
+    "FactionName": "המחנה הממלכתי",
+    "FactionID": 1098
+  },
+  "30082": {
+    "Id": 30082,
+    "FirstName": "יפעת",
+    "Email": null,
+    "LastName": "שאשא ביטון",
+    "FactionName": "המחנה הממלכתי",
+    "FactionID": 1098
+  },
+  "30683": {
+    "Id": 30683,
+    "FirstName": "חילי",
+    "Email": "ctropper@knesset.gov.il",
+    "LastName": "טרופר",
+    "FactionName": "המחנה הממלכתי",
+    "FactionID": 1098
+  },
+  "30682": {
+    "Id": 30682,
+    "FirstName": "מיכאל מרדכי",
+    "Email": "mbiton@knesset.gov.il",
+    "LastName": "ביטון",
+    "FactionName": "המחנה הממלכתי",
+    "FactionID": 1098
+  },
+  "30685": {
+    "Id": 30685,
+    "FirstName": "אורית",
+    "Email": "ofarkash@knesset.gov.il",
+    "LastName": "פרקש הכהן",
+    "FactionName": "המחנה הממלכתי",
+    "FactionID": 1098
+  },
+  "30118": {
+    "Id": 30118,
+    "FirstName": "שרן מרים",
+    "Email": "shaskel@knesset.gov.il",
+    "LastName": "השכל",
+    "FactionName": "המחנה הממלכתי",
+    "FactionID": 1098
+  },
+  "30694": {
+    "Id": 30694,
+    "FirstName": "אלון",
+    "Email": "aschuster@knesset.gov.il",
+    "LastName": "שוסטר",
+    "FactionName": "המחנה הממלכתי",
+    "FactionID": 1098
+  },
+  "30708": {
+    "Id": 30708,
+    "FirstName": "מאי",
+    "Email": "mgolan@knesset.gov.il",
+    "LastName": "גולן",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "30835": {
+    "Id": 30835,
+    "FirstName": "בועז",
+    "Email": "bbismut@knesset.gov.il",
+    "LastName": "ביסמוט",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "30860": {
+    "Id": 30860,
+    "FirstName": "טלי",
+    "Email": "tgotlib@knesset.gov.il",
+    "LastName": "גוטליב",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "30831": {
+    "Id": 30831,
+    "FirstName": "אלי",
+    "Email": "edalal@knesset.gov.il",
+    "LastName": "דלל",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "12944": {
+    "Id": 12944,
+    "FirstName": "דני",
+    "Email": null,
+    "LastName": "דנון",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "30861": {
+    "Id": 30861,
+    "FirstName": "שלום",
+    "Email": "shdanino@knesset.gov.il",
+    "LastName": "דנינו",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "30772": {
+    "Id": 30772,
+    "FirstName": "ניסים",
+    "Email": "nvaturi@knesset.gov.il",
+    "LastName": "ואטורי",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "30842": {
+    "Id": 30842,
+    "FirstName": "חנוך דב",
+    "Email": "chmelavitzky@knesset.gov.il",
+    "LastName": "מלביצקי",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "30718": {
+    "Id": 30718,
+    "FirstName": "עידית",
+    "Email": "isilman@knesset.gov.il",
+    "LastName": "סילמן",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "30853": {
+    "Id": 30853,
+    "FirstName": "משה",
+    "Email": "mosaada@knesset.gov.il",
+    "LastName": "סעדה",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "30832": {
+    "Id": 30832,
+    "FirstName": "אליהו",
+    "Email": "erevivo@knesset.gov.il",
+    "LastName": "רביבו",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "30786": {
+    "Id": 30786,
+    "FirstName": "עמיחי",
+    "Email": "ashikly@knesset.gov.il",
+    "LastName": "שיקלי",
+    "FactionName": "הליכוד ",
+    "FactionID": 1096
+  },
+  "30857": {
+    "Id": 30857,
+    "FirstName": "עמיחי",
+    "Email": "abene@knesset.gov.il",
+    "LastName": "אליהו",
+    "FactionName": "הציונות הדתית",
+    "FactionID": 1097
+  },
+  "30847": {
+    "Id": 30847,
+    "FirstName": "יצחק שמעון",
+    "Email": "yvaserlof@knesset.gov.il",
+    "LastName": "וסרלאוף",
+    "FactionName": "הציונות הדתית",
+    "FactionID": 1097
+  },
+  "30830": {
+    "Id": 30830,
+    "FirstName": "אוהד",
+    "Email": "ohtal@knesset.gov.il",
+    "LastName": "טל",
+    "FactionName": "הציונות הדתית",
+    "FactionID": 1097
+  },
+  "30833": {
+    "Id": 30833,
+    "FirstName": "אלמוג",
+    "Email": "almcohen@knesset.gov.il",
+    "LastName": "כהן",
+    "FactionName": "הציונות הדתית",
+    "FactionID": 1097
+  }
+}
