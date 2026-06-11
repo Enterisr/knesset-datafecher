@@ -80,12 +80,20 @@ class KnessetDataFetcher:
             return True
 
         raw_filter = self._normalize_committee_name(self.committee_filter)
-        raw_filter = self.COMMITTEE_NAME_ALIASES.get(raw_filter, raw_filter)
+        resolved_filter = self.COMMITTEE_NAME_ALIASES.get(raw_filter, self.committee_filter)
 
         normalized_committee = self._normalize_committee_name(committee_name)
-        normalized_filter = self._normalize_committee_name(raw_filter)
+        normalized_filter = self._normalize_committee_name(resolved_filter)
 
-        # Substring match keeps it flexible (e.g. pass "כספים" or "ועדת הכספים")
+        # If the filter resolves to an official committee name (e.g. via alias),
+        # enforce exact match so we don't accidentally include joint committees.
+        official_names = {
+            self._normalize_committee_name(v) for v in self.COMMITTEE_NAME_ALIASES.values()
+        }
+        if normalized_filter in official_names:
+            return normalized_committee == normalized_filter
+
+        # Otherwise allow substring match for ad-hoc filters.
         return normalized_filter in normalized_committee
 
     def _init_folders(self) -> None:
@@ -187,13 +195,29 @@ class KnessetDataFetcher:
         committee_name = meta.get("CommitteeName", "unknown_committee").strip().replace(" ", "_")
         date = meta.get("SessionDate", None)
 
+        title_match = re.search(r"<< נושא >>\s*(.*?)\s*<< נושא >>", text, re.DOTALL)
+        title = title_match.group(1).strip() if title_match else ""
+
+        utterances = []
+        pattern = r"<< (דובר|יור|אורח) >>\s*([^:]+):\s*<< \1 >>\s*(.*?)(?=\n\s*<< (?:דובר|יור|אורח|סיום) >>|$)"
+        matches = re.finditer(pattern, text, re.DOTALL)
+        for i, match in enumerate(matches, start=1):
+            speaker = match.group(2).strip()
+            utterance_text = match.group(3).strip()
+            utterances.append({
+                "id": str(i),
+                "speaker": speaker,
+                "text": utterance_text
+            })
+
         data = {
             "knesset_num": self.knesset_num,
             "committee": committee_name,
             "doc_id": doc_id,
             "date": date,
             "source_file": meta["FilePath"],
-            "text": text,
+            "title": title,
+            "utterances": utterances,
         }
 
         with open(out_path, "w", encoding="utf-8") as f:
@@ -238,6 +262,7 @@ class KnessetDataFetcher:
                 self.process_document(doc, committee_name, date, tries=tries + 1)
             else:
                 self.logger.error("Error processing %s OUT OF TRIES", doc.get("FilePath"))
+                raise Exception("CANT_PARSE_DOC")
         finally:
             if doc_path:
                 self.remove_resource_after_reading(doc_path)
@@ -268,7 +293,7 @@ class KnessetDataFetcher:
             json.dump(mks_data, f, ensure_ascii=False, indent=2)
         self.logger.info("MKs data saved to %s", file_path)
 
-    def fetch_all_committees_from_knesset(self) -> None:
+    def fetch_sessions(self) -> None:
         debug = os.getenv("DEBUG", "false").lower() == "true"
 
         page_size = 50
@@ -330,6 +355,6 @@ class KnessetDataFetcher:
 
     def process_knesset_data(self) -> None:
         self.fetch_mks_data()
-        self.fetch_all_committees_from_knesset()
+        self.fetch_sessions()
         self.logger.info("Checking for duplicate JSON files...")
         check_for_duplicate_files(self.OUTPUT_FOLDER)

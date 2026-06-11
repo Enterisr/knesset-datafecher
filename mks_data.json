@@ -18,7 +18,7 @@
   "30660": {
     "Id": 30660,
     "FirstName": "משה",
-    "Email": "marbel@knesset.gov.il",
+    "Email": null,
     "LastName": "ארבל",
     "FactionName": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל",
     "FactionID": 1095
@@ -450,7 +450,7 @@
   "23639": {
     "Id": 23639,
     "FirstName": "בועז",
-    "Email": "btoporovsky@knesset.gov.il",
+    "Email": null,
     "LastName": "טופורובסקי",
     "FactionName": "יש עתיד",
     "FactionID": 1102

@@ -28,6 +28,9 @@ fetcher.process_knesset_data()  # writes `mks_data.json` and `committee_data/par
 # Download only a specific committee (e.g. Vaadat Ksafim / Finance Committee):
 fetcher = KnessetDataFetcher(knesset_num=25, committee_filter="vaadat ksafim", force_refresh=False)
 fetcher.process_knesset_data()
+
+# Note: when `committee_filter` resolves to an official committee name (e.g. via aliases like
+# "vaadat ksafim"), matching is exact. Otherwise it falls back to substring matching.
 ```
 
 Extract utterances into a parallel folder structure:
