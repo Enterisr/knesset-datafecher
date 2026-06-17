@@ -5,3 +5,4 @@ temp*
 utterances/
 *.sqlite
 *.venv
+rag_index_E5.npz

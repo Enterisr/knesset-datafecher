@@ -12,11 +12,10 @@ Usage:
 
 import argparse
 import numpy as np
-import torch
 import ollama
-from transformers import AutoTokenizer, AutoModel  # torch needed for DictaBERT
+from sentence_transformers import SentenceTransformer
 
-EMBED_MODEL = 'dicta-il/dictabert'
+EMBED_MODEL = 'intfloat/multilingual-e5-small'
 LLM_MODEL   = 'qwen3:8b'
 TOP_K       = 5
 
@@ -27,29 +26,19 @@ SYSTEM_PROMPT = """/no_think
 אם הקטעים אינם מכילים מידע רלוונטי כלל — ציין זאת, אך אל תסרב לענות אם המידע קיים בקטעים."""
 
 
-class DictaBERTEmbedder:
-    def __init__(self, device='cpu', batch_size=32):
-        print(f'Loading embedder ({EMBED_MODEL}) on {device} …')
-        self.tokenizer = AutoTokenizer.from_pretrained(EMBED_MODEL)
-        self.model     = AutoModel.from_pretrained(EMBED_MODEL).to(device)
-        self.model.eval()
-        self.device     = device
-        self.batch_size = batch_size
+class Embedder:
+    def __init__(self):
+        print(f'Loading embedder ({EMBED_MODEL}) …')
+        self.model = SentenceTransformer(EMBED_MODEL)
 
     def encode(self, texts):
-        all_vecs = []
-        for i in range(0, len(texts), self.batch_size):
-            batch   = texts[i: i + self.batch_size]
-            encoded = self.tokenizer(batch, padding=True, truncation=True,
-                                     max_length=512, return_tensors='pt')
-            encoded = {k: v.to(self.device) for k, v in encoded.items()}
-            with torch.no_grad():
-                out = self.model(**encoded)
-            mask = encoded['attention_mask'].unsqueeze(-1).float()
-            vecs = (out.last_hidden_state * mask).sum(1) / mask.sum(1).clamp(min=1e-9)
-            vecs = torch.nn.functional.normalize(vecs, p=2, dim=1)
-            all_vecs.append(vecs.cpu().numpy())
-        return np.concatenate(all_vecs, axis=0)
+        prefixed = [f'query: {t}' for t in texts]
+        return self.model.encode(
+            prefixed,
+            normalize_embeddings=True,
+            show_progress_bar=False,
+            convert_to_numpy=True,
+        )
 
 
 def load_index(path):
@@ -105,13 +94,13 @@ def ask(question, vecs, metadata, embedder, k=TOP_K):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--index', default='rag_index_dictabert.npz',
+    parser.add_argument('--index', default='rag_index.npz',
                         help='Path to the .npz index file')
     parser.add_argument('--top-k', type=int, default=TOP_K)
     args = parser.parse_args()
 
     vecs, metadata = load_index(args.index)
-    embedder       = DictaBERTEmbedder(device='cpu')
+    embedder       = Embedder()
 
     print(f'\nUsing Ollama model: {LLM_MODEL}')
     print('Make sure Ollama is running: ollama serve')

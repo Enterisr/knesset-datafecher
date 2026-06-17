@@ -199,15 +199,37 @@ class KnessetDataFetcher:
         title = title_match.group(1).strip() if title_match else ""
 
         utterances = []
-        pattern = r"<< (דובר|יור|אורח) >>\s*([^:]+):\s*<< \1 >>\s*(.*?)(?=\n\s*<< (?:דובר|יור|אורח|סיום) >>|$)"
-        matches = re.finditer(pattern, text, re.DOTALL)
-        for i, match in enumerate(matches, start=1):
-            speaker = match.group(2).strip()
-            utterance_text = match.group(3).strip()
+        # Named-speaker pattern consumes both tags so the second << TYPE >> is
+        # not re-matched by the catch-all below.
+        header_re = re.compile(
+            r"<< (?P<type>דובר|יור|אורח) >>\s*(?P<speaker>[^:\n]+):\s*<< (?P=type) >>"
+            r"|<< (?P<special>\S+?) >>",
+            re.DOTALL,
+        )
+        SKIP_BLOCKS = {"נושא", "סיום"}
+        block_starts = list(header_re.finditer(text))
+        prev_speaker = ""
+        for idx, m in enumerate(block_starts):
+            tag = m.group("type") or m.group("special") or ""
+            if tag in SKIP_BLOCKS:
+                continue
+
+            body_start = m.end()
+            body_end = block_starts[idx + 1].start() if idx + 1 < len(block_starts) else len(text)
+            body = text[body_start:body_end].strip()
+
+            if m.group("type"):  # דובר / יור / אורח
+                speaker = m.group("speaker").strip()
+                prev_speaker = speaker
+            elif tag == "דובר_המשך":
+                speaker = prev_speaker
+            else:
+                speaker = tag  # קריאה, or any future/unknown block type
+
             utterances.append({
-                "id": str(i),
+                "id": str(len(utterances) + 1),
                 "speaker": speaker,
-                "text": utterance_text
+                "text": body,
             })
 
         data = {
